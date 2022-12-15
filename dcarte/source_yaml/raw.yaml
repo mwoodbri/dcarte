@@ -17,20 +17,16 @@ encounter:
         - encounter    
 questionnaire:
     columns: 
-        - home_id
         - patient_id
         - questionnaire
         - question
         - answer
-        - type
         - authored
     dtype: 
         - category
-        - category
         - object
         - object
-        - object
-        - object 
+        - string
         - object
     datasets:
         - questionnaire_responses    
@@ -53,14 +49,14 @@ raw_wearable_walking:
         - datetime64
         - datetime64
         - int
-        - int
         - object
-        - int
         - object
-        - int
+        - object
+        - object
+        - object
         - object    
     datasets:
-        - questionnaire_responses         
+        - raw_wearable_walking
 vital_signs:
     columns: 
         - home_id
